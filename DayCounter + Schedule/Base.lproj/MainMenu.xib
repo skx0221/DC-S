@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7702" systemVersion="14C1514" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7702"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="GzC-gU-4Uq"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
+            <connections>
+                <outlet property="dctAssemblyMenuItem" destination="BAo-dU-C0K" id="POf-qB-w3e"/>
+                <outlet property="dctDay0MenuItem" destination="ZuD-fj-huk" id="Xek-4M-7xA"/>
+                <outlet property="dctDay1MenuItem" destination="OP1-PF-0mN" id="5rX-9C-z6B"/>
+                <outlet property="dctDay2MenuItem" destination="hZY-RM-7y8" id="lq5-g2-UOO"/>
+                <outlet property="dctDay3MenuItem" destination="lYq-ca-J52" id="3TH-qt-C9C"/>
+                <outlet property="dctDay4MenuItem" destination="1nw-jG-DJv" id="rId-7j-WIf"/>
+                <outlet property="dctDay5MenuItem" destination="xwO-qc-Fjo" id="lhy-Ln-Zw9"/>
+                <outlet property="dctDay6MenuItem" destination="mva-25-oCf" id="b4s-P6-ixL"/>
+                <outlet property="dctDay7MenuItem" destination="aRn-ap-gp6" id="3ce-20-6S2"/>
+                <outlet property="dctDaySpecialMenuItem" destination="YGc-fw-3p0" id="LPq-Md-rZV"/>
+                <outlet property="dctMenu" destination="vtx-cY-Zqo" id="Nh7-wM-b4L"/>
+                <outlet property="dctSpecialMenuItem" destination="SO7-55-Jte" id="nUN-aD-Cf3"/>
+                <outlet property="inputAPeriod" destination="gWm-UN-Too" id="MB7-7b-R64"/>
+                <outlet property="inputBPeriod" destination="yTI-y6-7Pi" id="G4A-w9-SZD"/>
+                <outlet property="inputCPeriod" destination="sAq-S0-JJe" id="nhu-eJ-GrG"/>
+                <outlet property="inputDPeriod" destination="OzT-ow-bFg" id="cFC-rd-PrX"/>
+                <outlet property="inputEPeriod" destination="a8w-tI-R3i" id="rpn-GX-TlI"/>
+                <outlet property="inputFPeriod" destination="8xm-QC-oVJ" id="INu-FI-tFb"/>
+                <outlet property="inputGPeriod" destination="SSj-HF-8Ve" id="HTY-Nc-6OQ"/>
+                <outlet property="schDay1Menu" destination="KbG-DP-RO2" id="cfo-3B-0KS"/>
+                <outlet property="schDay1MenuItem" destination="HA6-Qp-oS8" id="PRQ-1T-yng"/>
+                <outlet property="schDay2Menu" destination="H11-vz-joE" id="XHx-LO-vuB"/>
+                <outlet property="schDay2MenuItem" destination="bII-TS-ZQw" id="0Hi-17-3dv"/>
+                <outlet property="schDay3Menu" destination="oeh-WS-9qK" id="umw-oD-BbY"/>
+                <outlet property="schDay3MenuItem" destination="3rg-tB-7I1" id="KUh-EL-6ON"/>
+                <outlet property="schDay4Menu" destination="5UZ-MG-s4t" id="qg1-t7-QgG"/>
+                <outlet property="schDay4MenuItem" destination="NEn-bJ-iV6" id="vRS-tE-zEi"/>
+                <outlet property="schDay5Menu" destination="eZF-bl-diE" id="wZG-fc-kqm"/>
+                <outlet property="schDay5MenuItem" destination="1dQ-g3-Tz1" id="IiF-76-irL"/>
+                <outlet property="schDay6Menu" destination="0jf-KU-6cV" id="ryJ-Tg-K1D"/>
+                <outlet property="schDay6MenuItem" destination="CcF-Bu-MkI" id="wF0-eG-1Jt"/>
+                <outlet property="schDay7Menu" destination="CPc-vs-2T9" id="QJg-ke-dJG"/>
+                <outlet property="schDay7MenuItem" destination="Xqg-f8-uHu" id="azc-UT-Vy6"/>
+                <outlet property="schMenu" destination="DTE-gP-NN1" id="6cI-UN-Mi2"/>
+                <outlet property="settingsWindow" destination="hit-M7-sx8" id="fSl-le-HzF"/>
+            </connections>
+        </customObject>
+        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <menu title="DayCounter" id="vtx-cY-Zqo">
+            <items>
+                <menuItem title="Next day" id="a5F-LH-f8E">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="dctNextDay:" target="Voe-Tx-rLC" id="UGD-wd-Uk3"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Assembly schedule" id="BAo-dU-C0K">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="dctAssembly:" target="Voe-Tx-rLC" id="89k-Hs-uwj"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Special schedule" id="SO7-55-Jte">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="dctSpecial:" target="Voe-Tx-rLC" id="Kcc-m2-qyh"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Go to" id="8Zd-rw-fhL">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Go to" id="fzf-s3-ECL">
+                        <items>
+                            <menuItem title="Day 0" id="ZuD-fj-huk">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="dctDay0:" target="Voe-Tx-rLC" id="N85-dZ-dy2"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Day 1" id="OP1-PF-0mN">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="dctDay1:" target="Voe-Tx-rLC" id="Kjn-jA-ZnX"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Day 2" id="hZY-RM-7y8">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="dctDay2:" target="Voe-Tx-rLC" id="upg-IR-npQ"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Day 3" id="lYq-ca-J52">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="dctDay3:" target="Voe-Tx-rLC" id="L18-ga-ptc"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Day 4" id="1nw-jG-DJv">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="dctDay4:" target="Voe-Tx-rLC" id="8wX-N6-pnF"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Day 5" id="xwO-qc-Fjo">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="dctDay5:" target="Voe-Tx-rLC" id="cWq-zC-f8k"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Day 6" id="mva-25-oCf">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="dctDay6:" target="Voe-Tx-rLC" id="wZt-pS-5qF"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Day 7" id="aRn-ap-gp6">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="dctDay7:" target="Voe-Tx-rLC" id="X8f-Nb-UGa"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Day ★" id="YGc-fw-3p0">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="dctDaySpecial:" target="Voe-Tx-rLC" id="GKG-mS-ap8"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="yd8-Nd-jvJ"/>
+                <menuItem title="Settings..." id="d3d-rJ-PED">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="openSettings:" target="Voe-Tx-rLC" id="D8F-ma-yCD"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="4eE-08-KnM"/>
+                <menuItem title="Quit" id="Kbe-cF-HJ6">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="terminate:" target="-3" id="2Ec-Jl-2AB"/>
+                    </connections>
+                </menuItem>
+            </items>
+        </menu>
+        <menu title="Schedule" id="DTE-gP-NN1">
+            <items>
+                <menuItem title="Day 1" id="HA6-Qp-oS8">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Day 1" id="9gR-tG-xTz">
+                        <items>
+                            <menuItem title="Item" id="4An-mD-HMe">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Day 2" id="bII-TS-ZQw">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Day 2" id="mWZ-K2-vQB">
+                        <items>
+                            <menuItem title="Item" id="WAa-b9-5iM">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Day 3" id="3rg-tB-7I1">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Day 3" id="Rvy-kK-kno">
+                        <items>
+                            <menuItem title="Item" id="Xpz-gb-EG3">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Day 4" id="NEn-bJ-iV6">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Day 4" id="NDN-qD-YI5">
+                        <items>
+                            <menuItem title="Item" id="pOz-2Q-gvR">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Day 5" id="1dQ-g3-Tz1">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Day 5" id="Sap-rQ-Saq">
+                        <items>
+                            <menuItem title="Item" id="8i1-qm-72B">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Day 6" id="CcF-Bu-MkI">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Day 6" id="wtP-si-Erk">
+                        <items>
+                            <menuItem title="Item" id="t2V-51-zVQ">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Day 7" id="Xqg-f8-uHu">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Day 7" id="ybL-qh-94Y">
+                        <items>
+                            <menuItem title="Item" id="9eb-3M-g2F">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="fbv-5a-wRu"/>
+                <menuItem title="Quit" id="j0R-rA-AJF">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="terminate:" target="-3" id="s1o-Ws-n44"/>
+                    </connections>
+                </menuItem>
+            </items>
+        </menu>
+        <menu title="Day 1" id="KbG-DP-RO2"/>
+        <menu title="Day 2" id="H11-vz-joE"/>
+        <menu title="Day 3" id="oeh-WS-9qK"/>
+        <menu title="Day 4" id="5UZ-MG-s4t"/>
+        <menu title="Day 5" id="eZF-bl-diE"/>
+        <menu title="Day 6" id="0jf-KU-6cV"/>
+        <menu title="Day 7" id="CPc-vs-2T9"/>
+        <window title="Classes" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="hit-M7-sx8">
+            <windowStyleMask key="styleMask" titled="YES"/>
+            <windowPositionMask key="initialPositionMask" topStrut="YES"/>
+            <rect key="contentRect" x="542" y="349" width="136" height="289"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="777"/>
+            <view key="contentView" id="pj0-y3-ihA">
+                <rect key="frame" x="0.0" y="5" width="136" height="289"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gWm-UN-Too">
+                        <rect key="frame" x="20" y="247" width="96" height="22"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" placeholderString="A Period" drawsBackground="YES" id="zlg-G9-UTi">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yTI-y6-7Pi">
+                        <rect key="frame" x="20" y="215" width="96" height="22"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" placeholderString="B Period" drawsBackground="YES" id="aGs-pJ-G5C">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sAq-S0-JJe">
+                        <rect key="frame" x="20" y="183" width="96" height="22"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" placeholderString="C Period" drawsBackground="YES" id="djD-CP-r7s">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OzT-ow-bFg">
+                        <rect key="frame" x="20" y="151" width="96" height="22"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" placeholderString="D Period" drawsBackground="YES" id="3p8-kM-h1m">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a8w-tI-R3i">
+                        <rect key="frame" x="20" y="119" width="96" height="22"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" placeholderString="E Period" drawsBackground="YES" id="Yrf-wf-cXU">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8xm-QC-oVJ">
+                        <rect key="frame" x="20" y="87" width="96" height="22"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" placeholderString="F Period" drawsBackground="YES" id="hGG-iA-Aoo">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SSj-HF-8Ve">
+                        <rect key="frame" x="20" y="55" width="96" height="22"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" placeholderString="G Period" drawsBackground="YES" id="SV1-TC-78z">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3AR-h2-2bI">
+                        <rect key="frame" x="33" y="11" width="71" height="32"/>
+                        <buttonCell key="cell" type="push" title="Save" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="C72-P0-UPs">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="saveSettings:" target="Voe-Tx-rLC" id="ekV-gy-PeH"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="545" y="278.5"/>
+        </window>
+    </objects>
+</document>
